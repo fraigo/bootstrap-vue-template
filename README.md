@@ -1,8 +1,8 @@
 
-Html Template
+Bootstrap4 / Vue.js  Template
 ==========
 
-Basic HTML template to start a Web page.
+Basic Bootstrap4 template using Vue.js as frontend controller.
 
 Autor: Francisco Igor 
 
@@ -11,4 +11,4 @@ Autor: Francisco Igor
 Preview
 ==========
 
-[Github HTML Preview](https://htmlpreview.github.io/?https://raw.githubusercontent.com/fraigo/html_template/master/index.html)
+[Github Pages](https://fraigo.github.com/bootstrap-template)
