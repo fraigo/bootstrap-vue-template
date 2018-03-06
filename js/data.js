@@ -1,6 +1,6 @@
 var data={
     icon:"images/icon.png",
-    title:"Me",
+    title:"My Portfolio Site",
     menu:[
         {
             label:"Home",
@@ -8,9 +8,25 @@ var data={
         },
         {
             label:"Portfolio",
+            url:"portfolio.html"
         },
         {
             label:"Contact",
+            url:"contact.html"
         },
     ],
+
+    pages:[
+        {
+            jumbo:{
+                title:"Title",
+                link:"link.html",
+                label:"Label",
+                content:"Content"
+            },
+
+        }
+
+    ],
+    
 }

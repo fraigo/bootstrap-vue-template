@@ -13,20 +13,36 @@
 	<link rel="icon" href="images/icon.png" type="image/png">
 	<!-- Script sxecuted before body starts. If you want to execute before loading, add defer attribute -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<style>
+
+
+
+
+	</style>
 </head>
 <body >
 <span id="app">
 
 	<bmenu :icon="icon" :title="title" :rightmenu="menu"></bmenu>
 
-	<main id="app" role="main" class="container">
+	<bmain v-for="page in pages">
 		
-		<bjumbo title="My Portfolio" button-link="test.html" button-label="Go to projects">
-			View my last projects and works. 
+		<bjumbo title="Title page" link="portfolio.html" label="Go to my projects">
+			This is my <b>portfolio</b> page.
 		</bjumbo>
 
-
+		<bslides :slides="slides" >
+			<bslide title="Slide1" active="1" image="images/background1.jpg">
+				Slide content 1 <i>with extra content</i>
+			</bslide>
+			<bslide title="Slide2" active="0" image="images/background1.jpg">
+				Slide content 2
+			</bslide>
+		</bslides>
+		
 	</main>
+
+	
 
 </span>
 	 <!-- Bootstrap core JavaScript
@@ -38,8 +54,11 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 	<script src="js/data.js" type="text/javascript" ></script>
-	<script src="components/bootstrap-menu.js" type="text/javascript" ></script>
-	<script src="components/test.js" type="text/javascript" ></script>
+	<script src="components/bmenu.js" type="text/javascript" ></script>
+	<script src="components/bjumbo.js" type="text/javascript" ></script>
+	<script src="components/bmain.js" type="text/javascript" ></script>
+	<script src="components/bslides.js" type="text/javascript" ></script>
+	<script src="components/bslide.js" type="text/javascript" ></script>
 	<script src="js/app.js" type="text/javascript" ></script>
 
 </body>
