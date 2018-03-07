@@ -11,4 +11,4 @@ Autor: Francisco Igor
 Preview
 ==========
 
-[Github Pages](https://fraigo.github.com/bootstrap-template)
+[Github Pages](https://fraigo.github.com/bootstrap-vue-template)
