@@ -4,14 +4,6 @@ Vue.component('bslides', {
           type:Number,
           default:0
         },
-        slides:{
-            type: Object,
-            default: function () {
-                return [{
-                  content:'{ title : "Slide1", content:"Content of slide1" , image:"background.png"}'
-                }];
-            }
-        },
         height:{
             type:String,
             default:"300px"
@@ -22,11 +14,11 @@ Vue.component('bslides', {
         var slots=this.$slots.default;
         var slides=[];
         for(var i=0;i<slots.length;i++){
-          if (slots[i].tag=="bslide"){
-            console.log(slots[i]);
-            slides.push({content:slots[i].children[0].text});
+          if (slots[i].tag && slots[i].tag.slice(-6)=="bslide"){
+            slides.push(slots[i].innerText);
           }
         }
+        console.log(slots);
         this.slides=(slides);
     },
     template: `
@@ -46,6 +38,9 @@ Vue.component('bslides', {
           <span class="sr-only">Next</span>
         </a>
       </div>
-    `
+    `,
+    data:{
+      slides:[],
+    }
     
   })

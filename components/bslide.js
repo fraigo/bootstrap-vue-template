@@ -3,7 +3,10 @@ Vue.component('bslide', {
         title:String,
         image:String,
         label:String,
-        active:Number,
+        active:{
+          type:Number,
+          default:0
+        },
         height:{
             type:Number,
             default:"300px"
