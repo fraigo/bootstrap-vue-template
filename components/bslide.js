@@ -7,12 +7,16 @@ Vue.component('bslide', {
         height:{
             type:Number,
             default:"300px"
+        },
+        color:{
+          type:String,
+          default:"#888"
         }
     },
     template: `
     <div  :style="{
             height: height, 
-            backgroundColor: '#777', 
+            backgroundColor: color, 
             backgroundImage:'url('+image+')',
             backgroundSize: 'cover',
             backgroundPosition:'center'

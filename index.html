@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- Page title -->
-	<title>HTML Template page</title>
+	<title>Bootstrap / Vue Template</title>
 	<!-- Viewport configuration - Responsive -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 	<!-- Character set of tis page -->
@@ -23,28 +23,30 @@
 <body >
 <span id="app">
 
-	<bmenu :icon="icon" :title="title" :rightmenu="menu"></bmenu>
+	<bmenu icon="images/icon.png" title="Example page" :rightmenu="menu"></bmenu>
 
-	<bmain v-for="page in pages">
+	<bmain >
 		
-		<bjumbo title="Title page" link="portfolio.html" label="Go to my projects">
-			This is my <b>portfolio</b> page.
+		<bjumbo title="Bootstrap / Vue Template" link="index.html" label="Go to second page">
+			This is my <b>main</b> page.
 		</bjumbo>
 
-		<bslides :slides="slides" >
+		<bslides  >
 			<bslide title="Slide1" active="1" image="images/background1.jpg">
 				Slide content 1 <i>with extra content</i>
 			</bslide>
 			<bslide title="Slide2" active="0" image="images/background1.jpg">
 				Slide content 2
 			</bslide>
+			<bslide title="Slide2" active="0" >
+				Slide content 2
+			</bslide>
 		</bslides>
 		
-	</main>
-
-	
+	</main>	
 
 </span>
+
 	 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

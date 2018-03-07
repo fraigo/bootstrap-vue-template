@@ -14,19 +14,6 @@ var data={
             label:"Contact",
             url:"contact.html"
         },
-    ],
-
-    pages:[
-        {
-            jumbo:{
-                title:"Title",
-                link:"link.html",
-                label:"Label",
-                content:"Content"
-            },
-
-        }
-
-    ],
+    ]
     
 }

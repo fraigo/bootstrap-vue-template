@@ -6,9 +6,9 @@ Vue.component('bmenu', {
         "leftmenu",
         "search"
     ],
-    template: `<nav class="navbar navbar-expand-md navbar-light bg-light rounded">
+    template: `<nav class="navbar navbar-expand-md navbar-light rounded">
         <a class="navbar-brand" href="#">
-        <img v-bind:src="icon" height="24" style="vertical-align:text-bottom">
+        <img v-if="icon" v-bind:src="icon" height="24" style="vertical-align:text-bottom">
         {{title}}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" 
