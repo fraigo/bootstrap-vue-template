@@ -7,12 +7,8 @@ var data={
             url:"index.html"
         },
         {
-            label:"Portfolio",
-            url:"portfolio.html"
-        },
-        {
             label:"Contact",
-            url:"contact.html"
+            url:"index.html"
         },
     ]
     
