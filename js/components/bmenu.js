@@ -4,10 +4,11 @@ Vue.component('bmenu', {
         "icon",
         "rightmenu",
         "leftmenu",
-        "search"
+        "search",
+        "link"
     ],
     template: `<nav class="navbar navbar-expand-md navbar-light rounded">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" :href="link">
         <img v-if="icon" v-bind:src="icon" height="24" style="vertical-align:text-bottom">
         {{title}}
         </a>

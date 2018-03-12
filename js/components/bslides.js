@@ -14,11 +14,11 @@ Vue.component('bslides', {
         var slots=this.$slots.default;
         var slides=[];
         for(var i=0;i<slots.length;i++){
+          if (slots[i].tag) console.log(slots[i].tag.slice(-6));
           if (slots[i].tag && slots[i].tag.slice(-6)=="bslide"){
             slides.push(slots[i].innerText);
           }
         }
-        console.log(slots);
         this.slides=(slides);
     },
     template: `
